@@ -1,13 +1,13 @@
 #include <unistd.h>
-
+// Данная программа показывает один из способов использовать sizeof для динамического массива
 int	main(void)
 {
-	int		i = 0;
 	char	str[] = "Hello world!!";
+	int	i = 0;
 	
-	while (str[i] != '\0')
+	while (i < (sizeof(str)/sizeof(str[0])))
 	{
-		write (1, &str[i], 1);
+		printf("%c", arr[i]);
 		i++;
 	}
 	return (0);
