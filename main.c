@@ -1,5 +1,7 @@
-#include <unistd.h>
+#include <stdio.h>
+
 // Данная программа показывает один из способов использовать sizeof для динамического массива
+
 int	main(void)
 {
 	char	str[] = "Hello world!!";
